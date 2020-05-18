@@ -138,7 +138,7 @@
     "disk_size": "61440",
     "disk_type_id": "1",
     "headless": "false",
-    "iso_checksum": "62256AE2D89C93990963185065B53E7806E0203E9EFCFBF15E2FAFB3FA31FE84",
+    "iso_checksum": "14c10f0348b26e373820d73954df234daf8f6f1c66cab6e106a116028e065522",
     "iso_checksum_type": "sha256",
     "iso_url": "https://download.my.visualstudio.com/db/en_windows_server_version_1909_x64_dvd_894c6446.iso",
     "manually_download_iso_from": "https://my.visualstudio.com/Downloads?q=Windows%20Server,%20version%201909",
