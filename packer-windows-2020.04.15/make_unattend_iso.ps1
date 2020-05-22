@@ -3,30 +3,22 @@
 
 $isoList = @(
     @{
-        FileName="./iso/windows_server_insider_unattend.iso";
+        FileName="./iso/server_1909.iso";
         Files=@(
-            "./answer_files/server_insider_uefi/autounattend.xml",
+            "./answer_files/server_1909/autounattend.xml",
             "./scripts/disable-screensaver.ps1",
-            "./scripts/disable-winrm.ps1",
-            "./scripts/enable-winrm.ps1"
-        )
-    },
-    @{
-        FileName="./iso/windows_10_insider_unattend.iso";
-        Files=@(
-            "./answer_files/10_insider_uefi/Autounattend.xml"
-            "./floppy/WindowsPowershell.lnk",
-            "./floppy/PinTo10.exe",
-            "./scripts/fixnetwork.ps1",
-            "./scripts/disable-screensaver.ps1",
-            "./scripts/disable-winrm.ps1",
+            "./scripts/enable-winrm.bat",
             "./scripts/enable-winrm.ps1",
-            "./scripts/microsoft-updates.bat",
-            "./scripts/win-updates.ps1"
+            "./scripts/enable-rdp.bat",
+            "./scripts/enable-remote-desktop.bat"
+            "./scripts/openssh.ps1",
+            "./scripts/create-domain.ps1",
+          # ""./scripts/win-updates.ps1", ------ Keep commented for development as installing all updates takes a while
+            "./scripts/sysprep.bat"
+
         )
     }
 )
-
 
 # FROM https://gallery.technet.microsoft.com/scriptcenter/New-ISOFile-function-a8deeffd
 # This probably won't work on Windows Server Core, so may need a different solution later
